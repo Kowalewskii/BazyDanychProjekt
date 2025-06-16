@@ -1,0 +1,21 @@
+<!DOCTYPE hibernate-configuration SYSTEM
+        "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
+
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@192.168.0.115:1521/xepdb1</property>
+        <!-- logowanie -->
+        <property name="hibernate.connection.username">pom</property>
+        <property name="hibernate.connection.password">pom</property>
+
+        <property name="hibernate.dialect">org.hibernate.dialect.Oracle12cDialect</property>
+
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+
+        <property name="hibernate.hbm2ddl.auto">update</property>
+    </session-factory>
+</hibernate-configuration>
+
